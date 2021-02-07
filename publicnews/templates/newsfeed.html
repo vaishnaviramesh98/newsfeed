@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="color:rgb(24, 41, 38); 
+background-color: rgb(214, 207, 197);" >
+    <form action="{% url 'newsfeed' %}" method="post">
+        {% csrf_token %}
+        <textarea rows="4" cols="50" name="feed" placeholder="Enter Text"></textarea> <br>
+        <button type="submit">Add Post</button>
+
+    </form>
+</body>
+
+</html>

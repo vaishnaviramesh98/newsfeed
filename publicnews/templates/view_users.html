@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="color:rgb(24, 41, 38); 
+background-color: rgb(214, 207, 197);">
+    <table style="width:10;">
+       {% for i in userlist %}
+      
+        
+        
+            <tr>
+              <td> Name: {{i.first_name}}&nbsp;{{i.last_name}}</td>
+              
+              <td>Email: {{i.email}} </td>
+            </tr>
+        {% endfor %}   
+    </table>
+</body>
+</html>
